@@ -1,0 +1,13 @@
+public class Main {//start of program
+
+    public static void main(String args[]){
+        //this is an annotation
+        String target = "./target.txt";
+        int a = 1;
+        double b = 1.12;
+        double c = a + b;
+        System.out.println("Hello");
+        return;
+    }
+
+}//end of program
