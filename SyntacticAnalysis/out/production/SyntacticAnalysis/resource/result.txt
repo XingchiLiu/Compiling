@@ -1,0 +1,94 @@
+Step 1: S->Sen ; S
+Step 2: Sen->Type ID Sen'
+Step 3: Type->int
+Step 4: Sen'->= E
+Step 5: E->T E'
+Step 6: T->F T'
+Step 7: F->Item
+Step 8: Item->Num
+Step 9: Num->INTEGER
+Step 10: T'->ε
+Step 11: E'->ε
+Step 12: S->Sen ; S
+Step 13: Sen->Type ID Sen'
+Step 14: Type->double
+Step 15: Sen'->ε
+Step 16: S->Sen ; S
+Step 17: Sen->Assign
+Step 18: Assign->ID = E
+Step 19: E->T E'
+Step 20: T->F T'
+Step 21: F->Item
+Step 22: Item->Num
+Step 23: Num->DECIMAL
+Step 24: T'->ε
+Step 25: E'->ε
+Step 26: S->Sen ; S
+Step 27: Sen->Type ID Sen'
+Step 28: Type->double
+Step 29: Sen'->= E
+Step 30: E->T E'
+Step 31: T->F T'
+Step 32: F->Item
+Step 33: Item->Num
+Step 34: Num->INTEGER
+Step 35: T'->ε
+Step 36: E'->ε
+Step 37: S->Sen ; S
+Step 38: Sen->Type ID Sen'
+Step 39: Type->double
+Step 40: Sen'->ε
+Step 41: S->if ( Con ) { S } else { S }
+Step 42: Con->Comp Con'
+Step 43: Comp->Item Cop Item
+Step 44: Item->ID
+Step 45: Cop->>=
+Step 46: Item->ID
+Step 47: Con'->&& Comp Con'
+Step 48: Comp->Item Cop Item
+Step 49: Item->ID
+Step 50: Cop->>=
+Step 51: Item->ID
+Step 52: Con'->ε
+Step 53: S->Sen ; S
+Step 54: Sen->Assign
+Step 55: Assign->ID = E
+Step 56: E->T E'
+Step 57: T->F T'
+Step 58: F->Item
+Step 59: Item->ID
+Step 60: T'->ε
+Step 61: E'->ε
+Step 62: S->ε
+Step 63: S->if ( Con ) { S } else { S }
+Step 64: Con->Comp Con'
+Step 65: Comp->Item Cop Item
+Step 66: Item->ID
+Step 67: Cop->>=
+Step 68: Item->ID
+Step 69: Con'->&& Comp Con'
+Step 70: Comp->Item Cop Item
+Step 71: Item->ID
+Step 72: Cop->>=
+Step 73: Item->ID
+Step 74: Con'->ε
+Step 75: S->Sen ; S
+Step 76: Sen->Assign
+Step 77: Assign->ID = E
+Step 78: E->T E'
+Step 79: T->F T'
+Step 80: F->Item
+Step 81: Item->ID
+Step 82: T'->ε
+Step 83: E'->ε
+Step 84: S->ε
+Step 85: S->Sen ; S
+Step 86: Sen->Assign
+Step 87: Assign->ID = E
+Step 88: E->T E'
+Step 89: T->F T'
+Step 90: F->Item
+Step 91: Item->ID
+Step 92: T'->ε
+Step 93: E'->ε
+Step 94: S->ε

@@ -1,0 +1,35 @@
+S->if ( Con ) { S } else { S }
+S->Sen ; S
+S->ε
+Con->Comp Con'
+Con'->&& Comp Con'
+Con'->|| Comp Con'
+Con'->ε
+Comp->Item Cop Item
+Cop->==
+Cop->>
+Cop-><
+Cop->>=
+Cop-><=
+Item->ID
+Item->Num
+Sen->Type ID Sen'
+Sen'->ε
+Sen'->= E
+Sen->Assign
+Type->float
+Type->int
+Type->double
+Assign->ID = E
+E->T E'
+E'->+ T E'
+E'->- T E'
+E'->ε
+T->F T'
+T'->* F T'
+T'->/ F T'
+T'->ε
+F->Item
+F->( E )
+Num->DECIMAL
+Num->INTEGER

@@ -1,0 +1,19 @@
+//this is a test input for syntactic analysis
+//find the biggest number among a, b, c.
+int a = 3;
+double b;
+b = 3.5;
+double c = 4;
+double biggest;
+if(a >= b && a>= c){
+    biggest = a;
+}
+else{
+    if(b >= c && b >= a){
+        biggest = b;
+    }
+    else{
+        biggest = c;
+    }
+}
+//end of test
